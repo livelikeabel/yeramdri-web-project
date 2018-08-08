@@ -15,6 +15,35 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 1025px) {
+  /* desktop */
+  h2 {
+    font-size: 7vh;
+    margin-top: 0px;
+    margin-bottom: 2vhs;
+  }
+  p {
+    font-size: 3vh;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  a {
+    display: none;
+  }
+  .ministry {
+    font-family: 'Nanum Gothic', serif;
+    color: #f4f4f4;
+    background: linear-gradient(0deg, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../assets/ministry.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    height: 32vw;
+    width: 32vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 1024px) {
   h2 {
     font-size: 3vh;

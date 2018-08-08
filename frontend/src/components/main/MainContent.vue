@@ -18,3 +18,17 @@ export default {
   }
 }
 </script>
+
+<style>
+@media (min-width: 1025px) {
+  /* desktop */
+  .content-div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+  }
+}
+</style>
