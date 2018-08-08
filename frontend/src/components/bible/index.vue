@@ -79,6 +79,29 @@ export default {
   visibility: hidden;
   height: 0px;
 }
+@media (min-width: 1024px) {
+  .bible-search {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-input {
+    font-size: 18px;
+    padding-top: 0.5vh;
+    padding-left: 10px;
+    padding-bottom: 0.5vh;
+    width: 654px;
+    height: 30px;
+    border: 1px solid rgba(185, 185, 185, 0.701);
+    border-radius: 2px;
+    box-shadow: 0.1vh 0.1vh 0.05vh rgba(128, 128, 128, 0.454);
+  }
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0.4vh 0.4vh 0.2vh rgba(128, 128, 128, 0.708);
+  }
+}
 @media (max-width: 1024px) {
   .bible-search {
     height: 10vh;
