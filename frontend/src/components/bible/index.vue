@@ -1,6 +1,8 @@
 <template>
   <div class="bible-index">
     <Header></Header>
+    <!-- 검색시, input에 margin-top을 줄 수 없어서, 보이지 않는 div 태그를 넣었다. -->
+    <div class="fake-div"></div>
     <div v-bind:class="[searchValue===''?'visibleClass':'hiddenClass']">
       <BibleTitle></BibleTitle>
     </div>
@@ -100,6 +102,9 @@ export default {
   .search-input:focus {
     outline: none;
     box-shadow: 0.4vh 0.4vh 0.2vh rgba(128, 128, 128, 0.708);
+  }
+  .fake-div{
+    height: 50px;
   }
 }
 @media (max-width: 1024px) {

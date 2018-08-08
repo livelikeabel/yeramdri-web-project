@@ -15,7 +15,7 @@ export default {
 @media (min-width: 1024px) {
   /* desktop */
   .bible-title {
-    height: 350px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ export default {
   .text-div {
     text-align: center;
     color: rgb(190,206,210);
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .text-div > h1 {
     font-size: 90px;

@@ -36,6 +36,91 @@ export default {
 }
 </script>
 <style scoped>
+@media (min-width: 1024px) {
+  /* desktop */
+  .bible-found-div {
+    width: 800px;
+    margin: 150px auto 100px auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #e6e6e61b;
+  }
+  .bible-found-title-div {
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+    text-align: center;
+    color: #262626;
+  }
+  .bible-found-title-div > h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+  .bible-found-posts-div {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .bible-found-tags-div {
+    margin-top: 1vh;
+  }
+  .bible-found-tags-div > span {
+    font-size: 2.3vh;
+    color: #003569;
+    padding: 0.5vh;
+    margin-right: 0.5vh;
+  }
+  .bible-found-section {
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+    font-size: 2.5vh;
+    color: #262626;
+  }
+  .bible-found-image {
+    width: 800px;
+  }
+  .bible-found-text {
+    height: 20vh;
+    font-size: 1.9vh;
+    overflow: scroll;
+    color: #262626;
+  }
+  .bible-found-sharing-div {
+    margin-top: 1vh;
+    margin-bottom: 1vh
+  }
+  .bible-found-question {
+    margin-top: 0px;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+    color: #777;
+  }
+  .bible-found-advice {
+    font-size: 2vh;
+    color: #777;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .bible-found-link-div {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  .bible-found-link {
+    text-decoration: none;
+    color: #262626;
+    font-size: 2.5vh;
+    padding: 1vh 3vh;
+    width: 250px;
+    font-weight: 700;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 1024px) {
   .bible-found-div {
     margin: 8vh auto 0 auto;
