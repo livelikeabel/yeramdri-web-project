@@ -81,20 +81,29 @@ export default {
     margin-top: 1vh;
   }
   .bible-found-tags-div > span {
-    font-size: 1.9vh;
-    background-color: rgb(60, 122, 252);
-    color: white;
-    padding: 1vh;
-    margin-right: 1vh;
+    font-size: 2.3vh;
+    color: #003569;
+    padding: 0.5vh;
+    margin-right: 0.5vh;
   }
   .bible-found-section {
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
     font-size: 2.5vh;
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh
+    color: #262626;
+  }
+  .bible-found-image {
+    width: 800px;
+  }
+  .bible-found-text {
+    height: 20vh;
+    font-size: 1.9vh;
+    overflow: scroll;
+    color: #262626;
   }
   .bible-found-sharing-div {
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh
+    margin-top: 1vh;
+    margin-bottom: 1vh
   }
   .bible-found-question {
     margin-top: 0px;

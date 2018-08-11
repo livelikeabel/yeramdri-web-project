@@ -18,8 +18,10 @@ export default {
   }
 }
 </script>
-<style scoped>
-@media (min-width: 1025px){
+
+<style>
+@media (min-width: 1025px) {
+  /* desktop */
   .content-div {
     display: flex;
     justify-content: space-around;
