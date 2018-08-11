@@ -1,22 +1,25 @@
 <template>
   <div class="bible-found-div">
-    <div class="bible-found-title-div">
-      <h3>{{title}}</h3>
-    </div>
+    <!--<div class="bible-found-title-div">-->
+      <!--<h3>{{title}}</h3>-->
+    <!--</div>-->
     <div class="bible-found-image-div">
       <img class="bible-found-image" :src="image" alt="말씀사진">
     </div>
     <div class="bible-found-posts-div">
-      <div class="bible-found-tags-div">
-        <span v-for="item in tag" :key="item">#{{item}}</span>
+      <div class="bible-found-title-div">
+        <h3>{{title}}</h3>
       </div>
+      <!--<div class="bible-found-tags-div">-->
+        <!--<span v-for="item in tag" :key="item">#{{item}}</span>-->
+      <!--</div>-->
       <div class="bible-found-content-div">
         <p class="bible-found-section">{{bibleTitle1}} {{bibleTitle2}}</p>
         <p class="bible-found-text">{{bibleContent}}</p>
       </div>
       <div class="bible-found-sharing-div">
         <p class="bible-found-question" v-for="item in bibleQuestion" :key="item.id">{{item.id}}. {{item.text}}</p>
-        <p class="bible-found-advice">{{bibleAdvice}}</p>
+        <p class="bible-found-advice">{{bibleAdvice}}<span class="bible-found-tag" v-for="item in tag" :key="item">#{{item}}</span></p>
       </div>
       <div class="bible-found-link-div">
         <button class="bible-found-link" v-on:click="goSermon">원문 설교 보러가기</button>
@@ -42,7 +45,9 @@ export default {
     margin: 0 auto 0 auto;
   }
   .bible-found-title-div {
-    height: 13vh;
+    margin: 0 auto;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -50,27 +55,28 @@ export default {
   }
   .bible-found-title-div > h3 {
     margin: 0px;
-    font-size: 4vh;
+    font-size: 4vmin;
   }
   .bible-found-image-div {
     position: absolute;
     height: 80vh;
-    width: 48vw;
-    top: 20vh;
-    left: 1vw;
+    width: 50vw;
+    top: 9vh;
+    left: 7vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
   }
   .bible-found-image {
     width: 100%;
   }
   .bible-found-posts-div {
     position: relative;
-    width: 48vw;
+    width: 35vw;
     height: 80vh;
-    margin: 0 1vw 0 auto;
+    margin: 0 7vw 0 auto;
     overflow: scroll;
   }
   .bible-found-text {
@@ -83,29 +89,26 @@ export default {
     margin-top: 1vh;
   }
   .bible-found-tags-div > span {
-    font-size: 2.3vh;
-    color: #003569;
-    padding: 0.5vh;
-    margin-right: 0.5vh;
+    font-size: 1.9vh;
+    background-color: rgb(60, 122, 252);
+    color: white;
+    padding: 1vh;
+    margin-right: 1vh;
+  }
+  .bible-found-tag {
+    color: rgb(60, 122, 252);
+    background-color: transparent;
+    margin-right: 0.25vh;
+    margin-left: 0.25vh;
   }
   .bible-found-section {
-    margin-top: 1.3vh;
-    margin-bottom: 1.3vh;
-    font-size: 2.5vh;
-    color: #262626;
-  }
-  .bible-found-image {
-    width: 800px;
-  }
-  .bible-found-text {
-    height: 20vh;
-    font-size: 1.9vh;
-    overflow: scroll;
-    color: #262626;
+    font-size: 3vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh
   }
   .bible-found-sharing-div {
-    margin-top: 1vh;
-    margin-bottom: 1vh
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh
   }
   .bible-found-question {
     margin-top: 0px;
@@ -171,6 +174,12 @@ export default {
     color: #003569;
     /* padding: 0.5vh; */
     margin-right: 0.5vh;
+  }
+  .bible-found-tag {
+    background-color: transparent;
+    color: rgb(60, 122, 252);
+    margin-left: 0.25vh;
+    margin-right: 0.25vh;
   }
   .bible-found-section {
     margin-top: 3.5px;

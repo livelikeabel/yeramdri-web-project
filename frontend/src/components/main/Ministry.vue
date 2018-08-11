@@ -15,7 +15,6 @@ export default {
 </script>
 <style scoped>
 @media (min-width: 1025px) {
-  /* desktop */
   h2 {
     font-size: 7vh;
     margin-top: 0px;

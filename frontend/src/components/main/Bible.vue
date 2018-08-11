@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 @media (min-width: 1025px) {
-  /* desktop */
   h2 {
     font-size: 7vh;
     margin-top: 0px;
@@ -71,8 +70,7 @@ export default {
   .bible {
     font-family: 'Nanum Gothic', serif;
     background-color: #fafafa;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('../../assets/bible.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../assets/bible.jpg');
     background-size: cover;
     height: 20vh;
     text-align: center;
