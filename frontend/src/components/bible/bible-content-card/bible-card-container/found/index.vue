@@ -19,7 +19,8 @@
       </div>
       <div class="bible-found-sharing-div">
         <p class="bible-found-question" v-for="item in bibleQuestion" :key="item.id">{{item.id}}. {{item.text}}</p>
-        <p class="bible-found-advice">{{bibleAdvice}}<span class="bible-found-tag" v-for="item in tag" :key="item">#{{item}}</span></p>
+        <p class="bible-found-advice">{{bibleAdvice}}</p>
+        <span class="bible-found-tag" v-for="item in tag" :key="item">#{{item}}</span>
       </div>
       <div class="bible-found-link-div">
         <button class="bible-found-link" v-on:click="goSermon">원문 설교 보러가기</button>
@@ -151,14 +152,14 @@ export default {
     margin: 8vh auto 0 auto;
   }
   .bible-found-title-div {
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
   .bible-found-title-div > h3 {
-    height: 60px;
+    height: 40px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    line-height: 60px;
+    line-height: 40px;
     color: #262626;
   }
   .bible-found-posts-div {
@@ -169,7 +170,7 @@ export default {
     /* margin-top: 1vh; */
   }
   .bible-found-tags-div > span {
-    font-size: 14px;
+    font-size: 10px;
     /* background-color: rgb(60, 122, 252); */
     color: #003569;
     /* padding: 0.5vh; */
@@ -177,9 +178,12 @@ export default {
   }
   .bible-found-tag {
     background-color: transparent;
-    color: rgb(60, 122, 252);
+    color: #003569;
+    font-size: 13px;
     margin-left: 0.25vh;
     margin-right: 0.25vh;
+    padding-top: 10px;
+    display: inline-block;
   }
   .bible-found-section {
     margin-top: 3.5px;
@@ -189,6 +193,7 @@ export default {
   }
   .bible-found-image {
     width: 100vw;
+    margin-top: 15px;
   }
   .bible-found-text {
     height: 20vh;
