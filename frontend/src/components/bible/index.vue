@@ -122,12 +122,6 @@ export default {
     align-items: center;
   }
   .search-input {
-    /* font-size: 3.5vh;
-    padding-top: 0.5vh;
-    padding-left: 0.5vh;
-    padding-bottom: 0.5vh;
-    width: 80vw; */
-
     font-size: 15px;
     padding-top: 5px;
     padding-left: 3vw;
