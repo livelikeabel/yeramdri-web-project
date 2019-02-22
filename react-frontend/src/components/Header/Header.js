@@ -11,15 +11,10 @@ const moduleName = 'Header'
 const Header = ({ toggleSidebar }) => {
   return (
     <div className={cx(`${moduleName}`)}>
-      <div className={cx(`${moduleName}-title-logo-wrapper`)}>
-        <Link className={cx(`${moduleName}-logo`)} to="/">
-          <img src={yeramdriLogo} alt="logo" />
-        </Link>
-        <Link to="/">
-          <h1>Yeramdri</h1>    
-        </Link>
-      </div>
       <i onClick={toggleSidebar} className="fas fa-bars" />
+      <Link className={cx(`${moduleName}-logo`)} to="/">
+        <img src={yeramdriLogo} alt="logo" />
+      </Link>
     </div>
   )
 }
